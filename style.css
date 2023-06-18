@@ -1,29 +1,21 @@
 /* style.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter';
+    font-style: italic;
     margin: 0;
     padding: 0;
 }
 
-/* ヘッダー画像 */
 header {
     background-image: url(images/title_back.jpg);
-    padding: 0;
+    padding: 5px;
 }
 
-/* ヘッダー横揃え */
 .header_content{
     display:flex;
     align-items: center;
     justify-content:space-between;
-    
-}
-
-/* ヘッダー配置 */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    margin-top:10px auto;
 }
 
 .header_logo{
@@ -36,20 +28,17 @@ nav ul {
     background-size: cover;
 }
 
-/* トップ画像配置 */
 .container{
     width: 100%;
-    height: 710px;
+    height: 700px;
 }
 
-/* 制作物配置 */
 .container-01{
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
 }
 
-/* Company name配置 */
 #letter_name{
     margin-top: 0px;
     padding-top:25%;
@@ -64,20 +53,45 @@ h1 {
     margin: 0;
 }
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 nav ul li {
     display: inline;
 }
 
-/* トップページ幅 */
 nav ul li a {
-    font-size : 25px;
+    font-size : 25px;/* トップページサイズ */
     font-family:  "Arial";
     color: black;
     text-decoration: none;
     margin: 0 20px;
 }
 
+section {
+    padding: 50px;
+}
 
+h2 {
+    margin-top: 0;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* セクションテーマ */
 .centering_section{
     display: flex;
     align-items: center; /* 垂直中心 */
@@ -101,30 +115,27 @@ nav ul li a {
     margin: 100px auto; /* 中央寄せ */
 }
 
-
-
-
-
-
-
-
-
-
-section {
-    padding: 50px;
+/* contactのブロック */
+.contact_block{
+    padding: 30px; /* 余白指定 */
+    background-color:  #efeeee; /* 背景色指定 */
+    width: 600px; /* 幅指定 */
+    margin: 50px auto; /* 中央寄せ */
+    
 }
-
-h2 {
-    margin-top: 0;
+input.box{
+    padding: 10px; /* 余白指定 */
+    background-color:  #d5d3d3; /* 背景色指定 */
+    /* text-align:  center; 中央寄せ */
+    width: 570px;
 }
-
-.project {
-    margin-bottom: 20px;
+textarea.box{
+    padding: 10px; /* 余白指定 */
+    background-color:  #d5d3d3; /* 背景色指定 */
+    /* text-align:  center; 中央寄せ */
+    width: 570px;
 }
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+.btn{
+    padding-top: 20px; /* 余白指定 */
+    text-align:  center;
 }
