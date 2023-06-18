@@ -5,28 +5,29 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    
+    <header>
     <!-- ヘッダー -->
     <header id ="top">
         <div class ="header_content">
             <h1><img class ="header_logo" src="images/Circuit Technology Logo.png" alt="Logo"></h1>
             <nav>
-                <ul class>
-                    <li class = "current"><a herf ="">Works</a></li>
-                    <li><a herf ="">About</a></li>
-                    <li><a herf ="">Contact</a></li>
+                <ul>
+                    <li><a href="#works">works</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <!-- トップページ -->
-
+    <!-- トップ -->
     <main id= "main_content">
 		<div class= "empty_home">
 			<div class = "container">
 				<article>
-					<p id = "letter_name">Company<br>Name</p>
+					<p id = "letter_name">Paradimg<br>Shift</p>
 				</article>
 			</div>
 		</div>
@@ -40,36 +41,48 @@
             <div class="item"><img class = "image-logo" src="images/Rectangle.png" alt="Work"><br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
         </div>
     </section>
-
-    <!-- こっから下啓介  -->
-
-
-
-    <section id="projects">
-        <h2>制作物</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p></p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p></p>
+    <!-- about -->
+    <section id="about">
+        <h2 class="centering_section">About</h2>
+        <div class="about_block">
+            <h3>Name 鈴木啓介</h3>
+            <p>軽く自己紹介</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>Ruby on Rails</li>
+                <li>html css</li>
+                <li>・・・</li>
+            </ul>
+            <h3>Name 土屋元</h3>
+            <p>軽く自己紹介</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>Ruby on Rails</li>
+                <li>html css</li>
+                <li>お酒と迷子</li>
+            </ul>
         </div>
     </section>
-
+    <!-- contact -->
     <section id="contact">
-        <h2>連絡先</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <input type="submit" value="Submit">
-        </form>
+        <h2 class="centering_section">Contact</h2>
+        <div class = "contact_block">
+        <form action="/check.html" method="POST">
+              <label class="username" for="username">Name</label><br>
+              <input id="username" type="text" name="name" class="box"><br><br>
+              <label class="email" for="email">E-mail</label><br>
+              <input id="email" type="email" name="email" class="box"><br><br>
+              <label class="text" for="text">Message</label><br>
+              <textarea id="text" class="box"></textarea><br>
+            <div class="btn">
+              <button type="submit">Send</button>
+            </div>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2023 My Portfolio. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
